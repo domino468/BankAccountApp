@@ -1,6 +1,6 @@
 public class Checking extends Account {
-    int debitCardNumber;
-    int debitCardPIN;
+    private int debitCardNumber;
+    private int debitCardPIN;
 
 
     public Checking(String name, String sSN, double initDeposit) {
@@ -10,7 +10,7 @@ public class Checking extends Account {
     }
     @Override
     public void setRate(){
-       rate = getBaseRate() * .15;
+        rate = getBaseRate() * .15;
     }
 
     private void setDebitCard() {
